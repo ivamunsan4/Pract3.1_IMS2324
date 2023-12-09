@@ -21,7 +21,7 @@ namespace GitHubTelegrama_IMS_2324
             //Obtengo el número de palabras que forma el telegrama IMS_2324
             //Primero defino los delimitadores de palabras IMS_2324
             char[] delimitadores = new char[] { ' ', '\r', '\n' };
-            //Cuento el número de palabras.
+            //Cuento el número de palabras..
             numPalabras = textoTelegrama.Split(delimitadores, StringSplitOptions.RemoveEmptyEntries).Length;
             //numPalabras = textoTelegrama.Length; IMS_2324
             //Si el telegrama es ordinario IMS_2324
