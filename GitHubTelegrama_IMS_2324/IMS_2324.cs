@@ -1,8 +1,8 @@
 namespace GitHubTelegrama_IMS_2324
 {
-    public partial class Form1 : Form
+    public partial class IMS_2324 : Form
     {
-        public Form1()
+        public IMS_2324()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace GitHubTelegrama_IMS_2324
 {
-    partial class Form1
+    partial class IMS_2324
     {
         /// <summary>
         ///  Required designer variable.
@@ -38,7 +38,7 @@
             label1.Name = "label1";
             label1.Size = new Size(63, 15);
             label1.TabIndex = 0;
-            label1.Text = "VERSION 2";
+            label1.Text = "VERSION 1";
             // 
             // Form1
             // 
