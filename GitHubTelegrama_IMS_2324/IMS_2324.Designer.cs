@@ -95,24 +95,20 @@
             // rbOrdinario
             // 
             rbOrdinario.AutoSize = true;
-            rbOrdinario.Checked = true;
             rbOrdinario.Location = new Point(16, 227);
             rbOrdinario.Name = "rbOrdinario";
             rbOrdinario.Size = new Size(75, 19);
             rbOrdinario.TabIndex = 12;
-            rbOrdinario.TabStop = true;
             rbOrdinario.Text = "Ordinario";
             rbOrdinario.UseVisualStyleBackColor = true;
             // 
             // rbUrgente
             // 
             rbUrgente.AutoSize = true;
-            rbUrgente.Checked = true;
             rbUrgente.Location = new Point(97, 227);
             rbUrgente.Name = "rbUrgente";
             rbUrgente.Size = new Size(67, 19);
             rbUrgente.TabIndex = 13;
-            rbUrgente.TabStop = true;
             rbUrgente.Text = "Urgente";
             rbUrgente.UseVisualStyleBackColor = true;
             // 
