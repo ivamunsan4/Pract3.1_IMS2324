@@ -10,7 +10,7 @@ namespace GitHubTelegrama_IMS_2324
         private void button1_Click_1(object sender, EventArgs e)
         {
             string textoTelegrama;
-            char tipoTelegrama = 'o';
+            char tipoTelegrama = ' ';
             int numPalabras = 0;
             double coste;
             //Leo el telegrama IMS_2324
@@ -18,16 +18,16 @@ namespace GitHubTelegrama_IMS_2324
             // telegrama urgente? IMS_2324
             if (cbUrgente.Checked)
                 tipoTelegrama = 'u';
-            //Obtengo el número de palabras que forma el telegrama IMS_2324
+            //Obtengo el nÃºmero de palabras que forma el telegrama IMS_2324
             //Primero defino los delimitadores de palabras IMS_2324
             char[] delimitadores = new char[] { ' ', '\r', '\n' };
-            //Cuento el número de palabras..
+            //Cuento el nÃºmero de palabras..
             numPalabras = textoTelegrama.Split(delimitadores, StringSplitOptions.RemoveEmptyEntries).Length;
             //numPalabras = textoTelegrama.Length; IMS_2324
             //Si el telegrama es ordinario IMS_2324
-            if (tipoTelegrama == 'o') //IMS_2324
+            if (tipoTelegrama == 'o')
                 if (numPalabras <= 10)
-                    coste = 2.5;
+                    coste = 25;
                 else
                     coste = 0.5 * numPalabras;
             else
