@@ -33,8 +33,9 @@
             txtTelegrama = new TextBox();
             label3 = new Label();
             txtPrecio = new TextBox();
-            cbUrgente = new CheckBox();
             button1 = new Button();
+            rbOrdinario = new RadioButton();
+            rbUrgente = new RadioButton();
             SuspendLayout();
             // 
             // label1
@@ -42,9 +43,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(375, 248);
             label1.Name = "label1";
-            label1.Size = new Size(106, 30);
+            label1.Size = new Size(130, 30);
             label1.TabIndex = 0;
-            label1.Text = "VERSION 2\r\nTelegrama Errores..";
+            label1.Text = "VERSION 3 principal\r\nTelegrama radio button";
             // 
             // label2
             // 
@@ -81,16 +82,6 @@
             txtPrecio.Size = new Size(160, 23);
             txtPrecio.TabIndex = 8;
             // 
-            // cbUrgente
-            // 
-            cbUrgente.AutoSize = true;
-            cbUrgente.Location = new Point(29, 221);
-            cbUrgente.Name = "cbUrgente";
-            cbUrgente.Size = new Size(73, 19);
-            cbUrgente.TabIndex = 7;
-            cbUrgente.Text = "Urgente?";
-            cbUrgente.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             button1.Location = new Point(241, 231);
@@ -101,16 +92,41 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
+            // rbOrdinario
+            // 
+            rbOrdinario.AutoSize = true;
+            rbOrdinario.Checked = true;
+            rbOrdinario.Location = new Point(16, 227);
+            rbOrdinario.Name = "rbOrdinario";
+            rbOrdinario.Size = new Size(75, 19);
+            rbOrdinario.TabIndex = 12;
+            rbOrdinario.TabStop = true;
+            rbOrdinario.Text = "Ordinario";
+            rbOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // rbUrgente
+            // 
+            rbUrgente.AutoSize = true;
+            rbUrgente.Checked = true;
+            rbUrgente.Location = new Point(97, 227);
+            rbUrgente.Name = "rbUrgente";
+            rbUrgente.Size = new Size(67, 19);
+            rbUrgente.TabIndex = 13;
+            rbUrgente.TabStop = true;
+            rbUrgente.Text = "Urgente";
+            rbUrgente.UseVisualStyleBackColor = true;
+            // 
             // IMS_2324
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(512, 330);
+            Controls.Add(rbUrgente);
+            Controls.Add(rbOrdinario);
             Controls.Add(label2);
             Controls.Add(txtTelegrama);
             Controls.Add(label3);
             Controls.Add(txtPrecio);
-            Controls.Add(cbUrgente);
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "IMS_2324";
@@ -126,7 +142,8 @@
         private TextBox txtTelegrama;
         private Label label3;
         private TextBox txtPrecio;
-        private CheckBox cbUrgente;
         private Button button1;
+        private RadioButton rbOrdinario;
+        private RadioButton rbUrgente;
     }
 }
